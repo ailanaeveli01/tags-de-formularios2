@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios2</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="nome" id="nome">
+
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Dados Cadastrais
+        </fieldset>
+        <div>
+            <label for="Endereco">Endereço</label>
+            <input id="endereco" type="text" placeholder="Av/Rua">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input id="email" type="text">
+        </div>
+        <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" id="Telefone">
+        </div>
+        <div>
+            <label for="cidade">Cidade</label>
+            <input type="text" id="cidade" list="cidades">
+            <datalist id="cidades">
+                <option>Fortim</option>
+                <option>Caucaia</option>
+                <option>Aquiraz</option>
+                <option>Eusebio</option>
+                <option>Maracanau</option>
+                <option>Maranguape</option>
+            </datalist>
+        </div>
+        <div>
+            <label for="estado">Estado</label>
+            <select id="estado">
+                <option disabled selected>Escolha um Estado</option>
+                <option>Acre</option>
+                <option>Bahia</option>
+                <option>Ceará</option>
+                <option>Distrito Federal</option>
+            </select>
+        </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados do Curso</legend>
+            <div>
+                <label for="cursos"></label>
+                <ul>
+                    <li>
+                        <input type="checkbox">
+                        Fullstack
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                        <input type="checkbox">
+                        Marketing
+                        </label>
+                    </li>
+                    <li>
+                        <input type="checkbox">
+                        UX/UI
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <label>Turno</label>
+                <ul>
+                    <li>
+                        <label>
+                        <input name= "turno" type="radio">
+                        Manhâ
+                        </label>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label>
+                        <input name= "turno" type="radio">
+                        Tarde
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </fieldset>
+    </form>
+
+
+</body>
+
+</html>
